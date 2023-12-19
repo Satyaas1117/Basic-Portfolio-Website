@@ -11,20 +11,21 @@
 <div id="header">
     <div class="container">
         <nav>
-            <img src="images/logo.png" class="logo">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contact</a></li>
-
-
-
-
-
+            <img src="logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                
+                
+                
                 
             </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
         </nav>
         <div class="header-text">
             <p>Student</p>
@@ -38,12 +39,14 @@
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
-                    <img src="images/user.png">
+                    <img src="image.jpg">
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
-                    <p>I am currently pursuing Btech(CSE) having specialisation in AIML from ITS Engineering College<br> 
-                       Greater Noida.<br> I've completed my Senior Secondary Education from CBSE Board.
+                    <p>I am a very active person with independent nature and have discipline and punctuality<br> towards my work.<br>
+                       I believe in self motivation and learning every small things that could be inspirable.<br>
+                       With developing technology, I appreciate myself towards innovation that are growing and<br> making our life easier.<br>
+                       I have a good capability to solve problems and managing time in efficient manner. 
 
                     </p>
                     <div class="tab-titles">
@@ -88,19 +91,19 @@
                 <div>
                     <i class="fa-solid fa-palette"></i>
                     <h2>Art</h2>
-                    <p>For me Art is not art only a place to live, but it's also a way of life. I draw dreams. I believe drawing makes me stand out in a crowd. If your life is a black canvas, then you should draw it. </p>
+                    <p>For me Art is not arts only a place to live, but it's also a way of life. I draw dreams. I believe drawing makes me stand out in a crowd. If your life is a black canvas, then you should draw it. </p>
                     <a href="#">Learn more</a>
                 </div>
                 <div>
                     <i class="fa-solid fa-plane-departure"></i>
                     <h2>Travelling</h2>
-                    <p>I'm a real adventurer and digital nomad. Travelling through life with the hope of meeting new and exciting people from all walks of life! </p>
+                    <p>I'm a real adventurer and digital nomad. Travelling through life with the hope of meeting new and exciting people from all walks of life! I believe in a quotes 'Live life with no excuses,trevel with no regret'. </p>
                     <a href="#">Learn more</a>
                 </div>
                 <div>
-                    <i class="fa-brands fa-app-store"></i>
-                    <h2>App Design</h2>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo corrupti nulla aut voluptas nobis ut reprehenderit voluptates, nisi magni molestias odio voluptatem ullam id aspernatur, unde ex asperiores ipsa magnam tempore nesciunt ipsam et?</p>
+                    <i class="fa-solid fa-book-open"></i>
+                    <h2>Reading</h2>
+                    <p>I love reading books mostly historical events that makes me escape reality. Books help me travel through world and acts as passport to countless adventures. 'A reader lives a thousand lives before he dies' the best inspiration of my life. </p>
                     <a href="#">Learn more</a>
                 </div>
 
@@ -113,29 +116,28 @@
             <h1 class="sub-title">My Work</h1>
             <div class="work-list">
                 <div class="work">
-                    <img src="images/work-1.png">
+                    <img src="work1.png">
                     <div class="layer">
-                        <h3>Social Media App</h3>
-                        <p>The app connects you to the talented people around the world.
-                            Downlaod it from play store.</p>
+                        <h3>Portfolio</h3>
+                        <p>A basic portfolio website designed for Internship tasks 
+                            only.
+                        </p>
                             <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
                     </div>
                 </div>
                 <div class="work">
-                    <img src="images/work-2.png">
+                    <img src="work2.jpg">
                     <div class="layer">
-                        <h3>Music App</h3>
-                        <p>The app connects you to the talented people around the world.
-                            Downlaod it from play store.</p>
+                        <h3>Prime Video Clone</h3>
+                        <p>A complete prime video clone made with HTML, CSS, JS</p>
                             <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
                     </div>
                 </div>
                 <div class="work">
-                    <img src="images/work-3.png">
+                    <img src="work3.png">
                     <div class="layer">
-                        <h3>Online Shopping App</h3>
-                        <p>The app connects you to the talented people around the world.
-                            Downlaod it from play store.</p>
+                        <h3>None</h3>
+                        <p>Any other work can be listed here!</p>
                             <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
                     </div>
                 </div>
@@ -147,26 +149,32 @@
     <div id="contact">
         <div class="container">
             <div class="row">
-                <div class="contact-left"></div>
-                <h1 class="sub-title">Contact Me</h1>
-                <p><i class="fa-solid fa-paper-plane"></i> contact@exapmle.com</p>
-                <p><i class="fa-solid fa-square-phone"></i> 7856534299</p>
-                <div class="social-icons">
-                    <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
-                    <a href=""><i class="fa-brands fa-twitter-square"></i></a>
-                    <a href=""><i class="fa-brands fa-instagram"></i></a>
-                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> contact@exapmle.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i> 7856534299</p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="Resume.pdf" download class="btn btn2">Download CV</a>
+                    </div>
+
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
                 </div>
             </div>
-            <div class="contact-right">
-                <form>
-                    <input type="text" name="Name" placeholder="Your Name" required>
-                    <input type="email" name="email" placeholder="Your Email" required>
-                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                    <button type="submit">Submit</button>
-
-                </form>
-            </div>
+            
+        </div>
+        <div class="copyright">
+            <p>All rights reserved. Made with <i class="fa-solid fa-heart"></i> by satya </p>
         </div>
     </div>
 
@@ -186,6 +194,16 @@
         }
     
 
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
     </script>
 
 
